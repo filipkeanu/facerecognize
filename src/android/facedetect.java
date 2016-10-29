@@ -1,4 +1,4 @@
-package com.oliviafil.camera;
+package com.oliviafil.cam;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
@@ -9,7 +9,7 @@ public class facedetect extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
-        if (action.equals("greet")) {
+        if (action.equals("startfacedetect")) {
 
             String name = data.getString(0);
             String message = "Hello, " + name;
