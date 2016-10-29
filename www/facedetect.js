@@ -1,7 +1,7 @@
 /*global cordova, module*/
 
 module.exports = {
-    greet: function (name, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "facedetect", "greet", [name]);
+    startfacedetect: function (name, successCallback, errorCallback) {
+        cordova.exec(successCallback, errorCallback, "facedetect", "startfacedetect", [name]);
     }
 };
