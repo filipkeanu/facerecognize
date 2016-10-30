@@ -1,4 +1,4 @@
-package cordova-plugin-facedetect;
+package cordovafacedetect;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
