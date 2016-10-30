@@ -1,4 +1,4 @@
-package com.oliviafil.cam;
+package cordova-plugin-facedetect;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
@@ -18,7 +18,7 @@ public class facedetect extends CordovaPlugin {
             return true;
 
         } else {
-            
+
             return false;
 
         }
