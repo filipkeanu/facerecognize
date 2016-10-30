@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="cordova-plugin-facedetect"
+    id="cordovafacedetect"
     version="1.0">
 
     <name>FaceDetection</name>
@@ -19,11 +19,11 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="facedetect">
-                <param name="android-package" value="cordova-plugin-facedetect.facedetect"/>
+                <param name="android-package" value="cordovafacedetect.facedetect"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/facedetect.java" target-dir="src/cordova-plugin-facedetect"/>
+        <source-file src="src/android/facedetect.java" target-dir="src/cordovafacedetect"/>
     </platform>
 
 </plugin>
