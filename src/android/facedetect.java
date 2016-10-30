@@ -23,4 +23,15 @@ public class facedetect extends CordovaPlugin {
 
         }
     }
+    
+     @Override
+    public void initialize(CordovaInterface cordova, final CordovaWebView webView) {
+        myActivity=cordova.getActivity();
+        cordova.setActivityResultCallback(this);
+    }
+
+    public void startfacedetect(){
+        Log.d("startdetect", "Starting detection");
+    }
+
 }
