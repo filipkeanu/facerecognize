@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="com.oliviafil.cam"
+    id="cordova-plugin-facedetect"
     version="1.0">
-    
+
     <name>FaceDetection</name>
-    
+
     <engines>
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
-    
+
     <asset src="www/facedetect.js" target="js/facedetect.js"/>
-    
+
     <js-module src="www/facedetect.js" name="facedetect">
         <clobbers target="facedetect" />
     </js-module>
-    
+
     <platform name="android">
-        
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="facedetect">
-                <param name="android-package" value="com.oliviafil.cam.facedetect"/>
+                <param name="android-package" value="cordova-plugin-facedetect.facedetect"/>
             </feature>
         </config-file>
-        
-        <source-file src="src/android/facedetect.java" target-dir="src/com/oliviafil/cam/"/>
+
+        <source-file src="src/android/facedetect.java" target-dir="src/cordova-plugin-facedetect"/>
     </platform>
-    
+
 </plugin>
