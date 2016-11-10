@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="cordovafacedetect"
+    id="cordovafacerecognize"
     version="1.0">
 
-    <name>FaceDetection</name>
+    <name>FaceRecognition</name>
 
     <engines>
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <asset src="www/facedetect.js" target="js/facedetect.js"/>
+    <asset src="www/facerecognize.js" target="js/facerecognize.js"/>
 
-    <js-module src="www/facedetect.js" name="facedetect">
-        <clobbers target="facedetect" />
+    <js-module src="www/facerecognize.js" name="facerecognize">
+        <clobbers target="facerecognize" />
     </js-module>
 
     <platform name="android">
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="facedetect">
-                <param name="android-package" value="cordovafacedetect.facedetect"/>
+            <feature name="facerecognize">
+                <param name="android-package" value="cordovafacerecognize.facerecognize"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/facedetect.java" target-dir="src/cordovafacedetect"/>
+        <source-file src="src/android/facerecognize.java" target-dir="src/cordovafacerecognize"/>
     </platform>
 
 </plugin>
