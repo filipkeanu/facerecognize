@@ -1,15 +1,15 @@
-package cordovafacedetect;
+package cordovafacerecognize;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class facedetect extends CordovaPlugin {
+public class facerecognize extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
-        if (action.equals("startfacedetect")) {
+        if (action.equals("startfacerecognize")) {
 
             String name = data.getString(0);
             String message = "Hello, " + name;
@@ -30,8 +30,8 @@ public class facedetect extends CordovaPlugin {
         cordova.setActivityResultCallback(this);
     }
 
-    public void startfacedetect(){
-        Log.d("startdetect", "Starting detection");
+    public void startfacerecognize(){
+        Log.d("startrecognize", "Starting recognition");
     }
 
 }
